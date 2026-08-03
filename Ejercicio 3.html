@@ -7,7 +7,22 @@
 </head>
 <body>
     <script>
+        function invertirTexto(texto) {
+        return texto.split("").reverse().join("");
+        }
         
+        function esPalindromo(texto) {
+        let textoLimpio = texto.replace(/\s/g, "");
+
+        return textoLimpio === invertirTexto(textoLimpio);
+        }
+
+        console.log(invertirTexto("Hola mundo"));
+
+        console.log(esPalindromo("reconocer"));           
+        console.log(esPalindromo("anita lava la tina"));  
+        console.log(esPalindromo("hola mundo"));
+
     </script>
 </body>
 </html>

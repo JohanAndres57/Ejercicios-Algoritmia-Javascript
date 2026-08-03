@@ -7,7 +7,28 @@
 </head>
 <body>
     <script>
-        
+        function encontrarMaximoMinimo(numeros) {
+  
+  if (numeros.length === 0) return null;
+
+  let max = numeros[0];
+  let min = numeros[0];
+
+  for (let i = 1; i < numeros.length; i++) {
+    let numeroActual = numeros[i];
+
+    if (numeroActual > max) {
+      max = numeroActual; 
+    }
+    if (numeroActual < min) {
+      min = numeroActual; 
+    }
+  }
+
+  return { max: max, min: min };
+}
+console.log(encontrarMaximoMinimo([3, 12, 5, -8, 20, 1])); 
+
     </script>
 </body>
 </html>

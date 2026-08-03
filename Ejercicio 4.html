@@ -7,7 +7,31 @@
 </head>
 <body>
     <script>
-        
+
+    function esPrimo(numero) {
+        if (numero <= 1) {
+            return false;
+        }
+        for (let i = 2; i <= Math.sqrt(numero); i++) {
+            if (numero % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function listarPrimos(limite) {
+        console.log("Números primos hasta " + limite + ":");
+
+        for (let i = 2; i <= limite; i++) {
+            if (esPrimo(i)) {
+                console.log(i);
+            }
+        }
+    }
+
+    listarPrimos(50);
+  
     </script>
 </body>
 </html>
