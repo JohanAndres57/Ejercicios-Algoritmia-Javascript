@@ -7,7 +7,24 @@
 </head>
 <body>
     <script>
-        
+        function factorial(numero) {
+    if (numero === 0) {
+        return 1;
+    }
+    let resultado = 1;
+    
+    for (let i = 1; i <= numero; i++) {
+
+        resultado = resultado * i;
+
+    }
+    return resultado;
+}
+
+console.log(factorial(0));   // 1
+console.log(factorial(1));   // 1
+console.log(factorial(5));   // 120
+console.log(factorial(10));  // 3628800
     </script>
 </body>
 </html>

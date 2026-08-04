@@ -7,7 +7,26 @@
 </head>
 <body>
     <script>
-        
+        function contarVocales(texto) {
+    let contador = 0;
+
+    for (let i = 0; i < texto.length; i++) {
+        let caracter = texto[i].toLowerCase();
+        if (
+            caracter === "a" ||
+            caracter === "e" ||
+            caracter === "i" ||
+            caracter === "o" ||
+            caracter === "u"
+        ) {
+            contador++;
+        }
+    }
+    return contador;
+}
+console.log(contarVocales("HolaMundo"));   
+console.log(contarVocales("Programacion"));
+
     </script>
 </body>
 </html>

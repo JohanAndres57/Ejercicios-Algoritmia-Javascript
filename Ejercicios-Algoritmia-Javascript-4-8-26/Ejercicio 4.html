@@ -7,7 +7,22 @@
 </head>
 <body>
     <script>
-        
+        function contarOcurrencias(arreglo, valorBuscado) {
+     let contador = 0;
+     for (let elemento of arreglo) {
+
+        if (elemento === valorBuscado) {
+
+            contador++;
+        }
+     }
+
+    return contador;
+}
+
+console.log(contarOcurrencias([1,2,3,2,2,5],2));     
+console.log(contarOcurrencias(["a","b","a","c"],"a")); 
+console.log(contarOcurrencias([1,2,3],9));             
     </script>
 </body>
 </html>
